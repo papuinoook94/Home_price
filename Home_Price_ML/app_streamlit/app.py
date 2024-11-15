@@ -61,6 +61,5 @@ input_data = pd.DataFrame({
 
 # Realizar predicción
 if st.button("Predecir Precio"):
-    price_log_pred = model.predict(input_data)
-    price_pred = np.expm1(price_log_pred[0])  # Inverso de log1p para obtener el precio original
-    st.write(f"El precio estimado de la propiedad es: ${price_pred:,.2f}")
+    price_pred = model.predict(input_data)
+    st.write(f"El precio estimado de la propiedad es:",price_pred)

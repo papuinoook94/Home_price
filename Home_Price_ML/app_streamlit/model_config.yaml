@@ -1,0 +1,7 @@
+model:
+  name: "RandomForestRegressor"
+  parameters:
+    n_estimators: 1978
+    max_depth: No
+    min_samples_leaf: 1 
+    min_samples_split: 2
